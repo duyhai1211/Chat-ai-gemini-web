@@ -1,7 +1,8 @@
+
 import React from "react";
 
 const ChatDetail = () => {
-    return <div className="text-white">chat123</div>;
+    return <div className="text-white">ChatDetail</div>;
 };
 
 export default ChatDetail;
