@@ -3,8 +3,8 @@ import ImgTemp from "../assets/temp.jpeg";
 const ChatDetail = () => {
     return (
         <div className="text-white w-[80%]">
-            <h1 className="text-xl uppercase font-bold">Gemini</h1>
-            <div className="max-w-[90%] w-full mx-auto mt-32">
+            <h1 className="text-xl uppercase font-bold p-4">Gemini</h1>
+            <div className="max-w-[90%] w-full mx-auto mt-32 flex-col space-y-20">
                 <div className="flex flex-col space-y-5">
                     <div className="space-y-1">
                         <h2 className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-[30px] inline-block text-transparent bg-clip-text font-bold">
@@ -28,8 +28,16 @@ const ChatDetail = () => {
 
                     <div className="w-[200px] h-[200px] bg-primaryBg-sideBar flex items-center justify-center rounded-lg flex-col">
                         <p>Create images with AI</p>
-                        <img src={ImgTemp} alt="temp" className="w-[150px] h-[150px]" />
+                        <img
+                            src={ImgTemp}
+                            alt="temp"
+                            className="w-[150px] h-[150px]"
+                        />
                     </div>
+                </div>
+                <div className="flex item-center space-x-4 w-full">
+                    <input type="text" placeholder="Enter the command here" className="p-4 rounded-lg bg-primaryBg-default w-[90%] border" />
+                    <button className="p-4 rounded-lg bg-green-500 text white ">Send</button>
                 </div>
             </div>
         </div>
