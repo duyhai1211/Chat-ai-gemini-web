@@ -1,10 +1,14 @@
 import IconPlus from "../assets/plusIcon.png";
 import IconChat from "../assets/chat.png";
 import IconTrash from "../assets/remove.png";
+import IconMenu from "../assets/menu.png";
 
 const SideBar = () => {
     return (
         <div className="bg-primaryBg-sideBar w-[280px] h-screen text-white p-8">
+            <button className="flex ml-auto xl:hidden">
+                <img src={IconMenu} alt="menu icon" className="w-4 h-4" />
+            </button>
             <div className="mt-20">
                 <button className="px-4 py-2 flex items-center space-x-4 bg-gray-600 mb-10">
                     <img src={IconPlus} alt="plus icon" className="w-4 h-4" />
