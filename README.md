@@ -13,17 +13,30 @@ Follow the Vite guide for project setup:
 
 npm create vite@latest my-project --template react
 
+```
+
 2.	Navigate into the project directory:
+
+```bash
 
 cd my-project
 
+```
 3.	Install dependencies:
+
+```bash
 
 npm install
 
+```
+
 4.	Start the development server:
 
+```bash
+
 npm run dev
+
+```
 
 # **2. Setting Up React Router DOM**
 
@@ -33,7 +46,9 @@ React Router DOM is used for client-side routing in React applications.
 
 1.	Install React Router DOM:
 
+```bash
 npm install react-router-dom
+```
 
 2.	Import and configure routes in your project as per the documentation.
 
@@ -44,9 +59,9 @@ Redux Toolkit simplifies state management in React projects.
 [Redux Toolkit Documentation](https://redux-toolkit.js.org/introduction/getting-started)
 
 1.	Install Redux Toolkit and React Redux:
-
+```bash
 npm install @reduxjs/toolkit react-redux
-
+```
 2.	Set up a Redux store and connect it to your React app following the official guide.
 
 # **4. Adding Tailwind CSS with Vite**
@@ -56,9 +71,9 @@ Tailwind CSS is a utility-first CSS framework.
 [Tailwind CSS Guide for Vite](https://tailwindcss.com/docs/guides/vite)
 
 1.	Install Tailwind CSS:
-
+```bash
 npm install -D tailwindcss postcss autoprefixer
-
+```
 npx tailwindcss init
 
 2.	Configure the tailwind.config.js file as needed.
@@ -72,9 +87,9 @@ npx tailwindcss init
 @tailwind utilities;
 
 4.	Ensure Tailwind is working by starting your Vite development server:
-
+```bash
 npm run dev
-
+```
 # **5. Additional Resources**
 
 •	**Google AI Studio API Key**: Refer to [AI Studio API Documentation](https://aistudio.google.com/apikey) for API setup.
