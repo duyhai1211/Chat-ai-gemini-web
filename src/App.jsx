@@ -5,7 +5,9 @@ function App() {
     return (
         <>
             <div className="bg-primaryBg-default h-screen flex">
-                <SideBar />
+                <div className="xl:block hidden">
+                    <SideBar />
+                </div>
                 <Outlet />
             </div>
         </>
