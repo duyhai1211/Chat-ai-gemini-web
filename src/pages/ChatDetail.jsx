@@ -5,11 +5,24 @@ import IconMenu from "../assets/menu.png";
 const ChatDetail = () => {
     const [menuToggle, setMenuToggle] = useState(false);
     return (
-        <div className="text-white xl:w-[80%] w-full">
+        <div className="text-white xl:w-[80%] w-full relative">
             <div className="flex items-center space-x-2 p-4">
-                <img src={IconMenu} alt="menu icon" className="w-8 h-8 xl:hidden" />
-                <h1 className="text-xl uppercase font-bold p-4">Gemini</h1>
+                <button onClick={() => setMenuToggle(!menuToggle)}>
+                    <img
+                        src={IconMenu}
+                        alt="menu icon"
+                        className="w-8 h-8 xl:hidden"
+                    />
+                </button>
+                <h1 className="text-xl uppercase font-bold">Gemini</h1>
             </div>
+
+            {menuToggle && (
+                <div className="absolute h-full top-0 left-0">
+                    <SideBar onToggle={() => setMenuToggle(!menuToggle)} />
+                </div>
+            )}
+
             <div className="max-w-[90%] w-full mx-auto mt-32 flex-col space-y-20">
                 <div className="flex flex-col space-y-5">
                     <div className="space-y-1">
