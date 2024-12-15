@@ -8,7 +8,7 @@ const chatSlice = createSlide ({
     name: 'chat',
     initialState: initData,
     reducers:{
-        addChat: (starte, action) =>{
+        addChat: (state, action) =>{
             state.data.push('Hello')
         }
     }
